@@ -101,7 +101,18 @@ The platform converts raw operational data into meaningful recovery strategies.
 ---
 
 ## 📂 Project Structure
-
+DINE-INTEL/
+│
+├── app.py
+├── knowledge_base.py
+├── templates/
+│ ├── index.html
+│ ├── about.html
+│ └── contact.html
+├── static/
+│ ├── style.css
+│ └── script.js
+└── README.md
 
 ---
 
