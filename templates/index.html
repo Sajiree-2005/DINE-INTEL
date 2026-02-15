@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DINE-INTEL | Home</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="{{ url_for('static', filename='logo.jpeg') }}"
+            alt="DINE-INTEL Logo"
+          />
+          <span>DINE-INTEL</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero animate-on-scroll">
+      <div class="aurora"></div>
+      <!-- Aurora effect -->
+      <div class="hero-content">
+        <div class="hero-logo">
+          <a href="/about">
+            <img
+              src="{{ url_for('static', filename='logo.jpeg') }}"
+              alt="DINE-INTEL Logo"
+            />
+          </a>
+        </div>
+        <div class="hero-text">
+          <h1>Welcome to DINE-INTEL</h1>
+          <p>
+            Turning food-tech challenges into data-driven solutions for
+            recovery, growth, and customer trust.
+          </p>
+          <a href="#dashboard" class="btn-primary">View Dashboards</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Section -->
+    <section class="metrics animate-on-scroll">
+      <h2>Key Highlights</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <h3>1.2K+</h3>
+          <p>Recoverable Customers Identified</p>
+        </div>
+        <div class="metric-card">
+          <h3>500+</h3>
+          <p>Delivery SLA Issues Resolved</p>
+        </div>
+        <div class="metric-card">
+          <h3>80%</h3>
+          <p>Reduction in Cancellations</p>
+        </div>
+        <div class="metric-card">
+          <h3>150+</h3>
+          <p>Targeted Campaigns Launched</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau / Visualizations Section -->
+    <section id="dashboard" class="visualizations animate-on-scroll">
+      <h2>Interactive Dashboards</h2>
+      <p>
+        Explore key insights from our recovery analytics through the dashboards
+        below.
+      </p>
+
+      <div class="viz-grid">
+        <!-- Dashboard 1 -->
+        <div class="viz-card animate-on-scroll">
+          <div class="workflow-icon">📈</div>
+          <h3>Retention Analysis</h3>
+          <p>
+            Track retention trends and campaign influence on customer loyalty.
+          </p>
+          <a
+            href="https://public.tableau.com/views/Dashboard_17601038628640/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-primary"
+            target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+
+        <!-- Dashboard 2 -->
+        <div class="viz-card animate-on-scroll">
+          <div class="workflow-icon">🏙️</div>
+          <h3>Population Ranking: Jayanagar (1st)</h3>
+          <p>
+            Monitor delivery efficiency, SLA compliance, and operational gaps in
+            high-demand areas.
+          </p>
+          <a
+            href="https://public.tableau.com/views/Jayanagar_17601299320750/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-primary"
+            target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+
+        <!-- Dashboard 3 -->
+        <div class="viz-card animate-on-scroll">
+          <div class="workflow-icon">🏘️</div>
+          <h3>Population Ranking: Koramangala (2nd)</h3>
+          <p>
+            Track order patterns and churn probability to optimize campaigns for
+            Koramangala customers.
+          </p>
+          <a
+            href="https://public.tableau.com/views/Koramangala/KoramangalaOverview?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-primary"
+            target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+
+        <!-- Dashboard 4 -->
+        <div class="viz-card animate-on-scroll">
+          <div class="workflow-icon">🏡</div>
+          <h3>Population Ranking: Kammanahali (3rd)</h3>
+          <p>
+            Detect anomalies in cancellations, negative reviews, and delivery
+            delays in Kammanahali.
+          </p>
+          <a
+            href="https://public.tableau.com/views/Kammanahali/KammanahaliOverview?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-primary"
+            target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+
+        <!-- Dashboard 5 -->
+        <div class="viz-card animate-on-scroll">
+          <div class="workflow-icon">📝</div>
+          <h3>Review of Less Populated Regions</h3>
+          <p>
+            Evaluate delivery challenges, customer engagement, and recovery
+            potential in low-density areas to optimize resources and expand
+            growth opportunities.
+          </p>
+          <a
+            href="https://public.tableau.com/views/ReviewofLessPopulatedAreas/ReviewofLessPopulatedRegions?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-primary"
+            target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+        <!-- Dashboard 6 -->
+        <div class="viz-card animate-on-scroll">
+          <div class="workflow-icon">📊</div>
+          <h3>Pre-During-Post Crisis Analysis</h3>
+          <p>
+            Analyze customer behavior and order patterns across pre-crisis,
+            during crisis, and post-crisis periods to optimize recovery
+            strategies.
+          </p>
+          <a
+            href="https://public.tableau.com/views/Pre-During-PostCrisis/Pre-During-PostCrisis1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-primary"
+            target="_blank"
+            >View Dashboard</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="workflow animate-on-scroll">
+      <h2>How DINE-INTEL Works</h2>
+      <div class="workflow-grid">
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fas fa-database"></i></div>
+          <h3>Step 1: Collect Data</h3>
+          <p>Import customer, order, and delivery data for analysis.</p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Step 2: Analyze & Detect</h3>
+          <p>
+            Identify trends, anomalies, and recovery opportunities using AI.
+          </p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Step 3: Act & Recover</h3>
+          <p>
+            Deploy targeted campaigns and promotions to rebuild loyalty and
+            optimize operations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <img
+          src="{{ url_for('static', filename='logo.jpeg') }}"
+          alt="DINE-INTEL Logo"
+        />
+        <p>© 2025 DINE-INTEL | Data-Driven Recovery Platform</p>
+        <p>Built with ❤️ using Python, Flask, and Tableau</p>
+      </div>
+    </footer>
+
+    <!-- -------------------- Chatbot -------------------- -->
+    <button id="chat-toggle" class="chat-toggle-btn">💬 Chat</button>
+    <div id="chatbox">
+      <div id="chat-header">INTEL Bot</div>
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

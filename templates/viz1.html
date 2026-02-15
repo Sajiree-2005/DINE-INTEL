@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profiles to Profits | DINE-INTEL</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="{{ url_for('static', filename='logo.jpeg') }}"
+            alt="DINE-INTEL Logo"
+          />
+          <span>DINE-INTEL</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero animate-on-scroll">
+      <div class="hero-text animate-on-scroll">
+        <h1>Profiles to Profits - Retention Analysis</h1>
+        <p>
+          Explore customer retention, churn probability, campaign influence,
+          order times, and restaurant performance through interactive insights.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tableau Dashboard -->
+    <section class="tableau animate-on-scroll">
+      <h2>Interactive Dashboard</h2>
+      <div class="tableau-container">
+        <iframe
+          src="https://public.tableau.com/views/Dashboard_17601261150470/Dashboard3?:language=en-GB&:display_count=n&:origin=viz_share_link"
+          width="100%"
+          height="800px"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <img
+          src="{{ url_for('static', filename='logo.jpeg') }}"
+          alt="DINE-INTEL Logo"
+        />
+        <p>© 2025 DINE-INTEL | Data-Driven Recovery Platform</p>
+        <p>Built with ❤️ using Python, Flask, and Tableau</p>
+      </div>
+    </footer>
+  </body>
+</html>

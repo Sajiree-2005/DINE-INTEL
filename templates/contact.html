@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | DINE-INTEL</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="{{ url_for('static', filename='logo.jpeg') }}"
+              alt="DINE-INTEL Logo"
+            />
+          </a>
+          <span>DINE-INTEL</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero">
+      <div class="aurora"></div>
+      <!-- Aurora effect -->
+      <div class="hero-logo">
+        <a href="/about">
+          <img
+            src="{{ url_for('static', filename='logo.jpeg') }}"
+            alt="DINE-INTEL Logo"
+          />
+        </a>
+      </div>
+      <div class="hero-text">
+        <h1>Contact DINE-INTEL</h1>
+        <p>
+          We'd love to hear from you! Reach out with your queries, feedback, or
+          collaboration ideas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- -------------------- Chatbot -------------------- -->
+    <div id="chatbox">
+      <div id="chat-header">INTEL Bot</div>
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+    </div>
+
+    <!-- Chat toggle button -->
+    <button id="chat-toggle" class="chat-toggle-btn">💬 Chat</button>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <img
+          src="{{ url_for('static', filename='logo.jpeg') }}"
+          alt="DINE-INTEL Logo"
+        />
+        <p>© 2025 DINE-INTEL | Data-Driven Recovery Platform</p>
+        <p>Built with ❤️ using Python, Flask, and Tableau</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

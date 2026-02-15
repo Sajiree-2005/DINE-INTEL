@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | DINE-INTEL</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="{{ url_for('static', filename='logo.jpeg') }}"
+              alt="DINE-INTEL Logo"
+            />
+          </a>
+          <span>DINE-INTEL</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about" class="active">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero animate-on-scroll">
+      <div class="aurora"></div>
+      <!-- Aurora effect -->
+      <div class="hero-logo">
+        <img
+          src="{{ url_for('static', filename='logo.jpeg') }}"
+          alt="DINE-INTEL Logo"
+        />
+      </div>
+      <div class="hero-text">
+        <h1>Empowering Food-Tech Recovery Through Intelligence</h1>
+        <p>
+          DINE-INTEL transforms operational data into actionable insights that
+          drive recovery, trust, and growth.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about animate-on-scroll">
+      <div class="about-container">
+        <div class="about-text animate-on-scroll">
+          <h2>About DINE-INTEL</h2>
+          <p>
+            In June 2025, a Bengaluru-based food-tech startup faced severe
+            <strong>food safety issues and delivery outages</strong>, resulting
+            in a sharp drop in customer trust, orders, and partner engagement.
+            DINE-INTEL was created to help such businesses recover using
+            <strong>data-driven insights</strong>.
+          </p>
+          <p>
+            Our platform helps identify
+            <strong>recoverable customer segments</strong>, track
+            <strong>order and behavior patterns</strong> across pre-crisis,
+            crisis, and recovery phases, evaluate
+            <strong>delivery performance and SLA gaps</strong>, and recommend
+            effective
+            <strong>marketing campaigns and high-value partnerships</strong>.
+          </p>
+          <p>
+            Additionally, DINE-INTEL monitors
+            <strong>feedback and sentiment</strong> to ensure ongoing recovery
+            and resilience. While chatbots can assist in interacting with users,
+            they are only a supporting tool — our intelligence is
+            <strong>data-first and actionable</strong>.
+          </p>
+        </div>
+        <div class="about-img animate-on-scroll">
+          <img
+            src="{{ url_for('static', filename='about.png') }}"
+            alt="About Illustration"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features animate-on-scroll">
+      <h2>Our Core Intelligence Modules</h2>
+      <div class="feature-grid">
+        <div class="feature-card animate-on-scroll">
+          <h3>👥 Customer Segmentation</h3>
+          <p>
+            Identify recoverable users, at-risk customers, and design engagement
+            strategies.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>📈 Order Pattern Analysis</h3>
+          <p>
+            Track behavioral changes across pre-crisis, crisis, and recovery
+            phases.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>🛵 Delivery Performance</h3>
+          <p>
+            Evaluate delivery delays, cancellations for operational excellence.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>🎯 Campaign & Partnership Recommendations</h3>
+          <p>
+            Predict high-value restaurant collaborations and generate
+            data-backed campaigns.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>📝 Sentiment Analysis</h3>
+          <p>
+            Monitor real-time feedback and reviews to measure recovery and
+            customer sentiment.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>📊 Recovery Index</h3>
+          <p>
+            Combines sentiment, delivery, and churn data into a single
+            performance metric.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>⚠️ At-Risk Users</h3>
+          <p>
+            Detects users showing declining engagement or negative sentiment
+            trends.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>🗺️ Delivery Heatmap</h3>
+          <p>
+            Identifies high-risk zones and delays through interactive spatial
+            analysis.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>🚨 Anomaly Detection</h3>
+          <p>
+            Auto-detects spikes in cancellations, delivery issues, or negative
+            reviews.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>🤖 Dynamic Promo Engine</h3>
+          <p>
+            Suggests automated offers that adapt based on customer and
+            performance data.
+          </p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <h3>💬 Chatbot Integration</h3>
+          <p>
+            Seamlessly interacts with users to provide insights and real-time
+            assistance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision animate-on-scroll">
+      <h2>Our Vision</h2>
+      <p>
+        To redefine recovery in the food-tech sector — where
+        <strong>data fuels strategy</strong>,
+        <strong>AI drives decision-making</strong>, and
+        <strong>trust leads to transformation</strong>.
+      </p>
+      <p class="quote">“From crisis to comeback — powered by intelligence.”</p>
+    </section>
+
+    <!-- -------------------- Chatbot -------------------- -->
+    <div id="chatbox">
+      <div id="chat-header">INTEL Bot</div>
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+    </div>
+
+    <button id="chat-toggle" class="chat-toggle-btn">💬 Chat</button>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <img
+          src="{{ url_for('static', filename='logo.jpeg') }}"
+          alt="DINE-INTEL Logo"
+        />
+        <p>© 2025 DINE-INTEL | Data-Driven Recovery Platform</p>
+        <p>Built with ❤️ using Python, Flask, and Tableau</p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,1155 @@
+/* =======================
+   DINE-INTEL – Dark + Green Theme
+   ======================= */
+
+:root {
+  --primary-green: #00c896;
+  --secondary-green: #007a5e;
+  --dark-bg: #0d1717;
+  --card-bg: #142323;
+  --text-light: #e6f2ef;
+  --accent: #18f7a2;
+  --hover-glow: 0 0 12px rgba(0, 255, 157, 0.3);
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+}
+
+/* ------------------ Navbar ------------------ */
+.navbar {
+  background-color: #101f1f;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: var(--shadow);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+}
+
+.logo span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-green);
+  text-shadow: var(--hover-glow);
+}
+
+/* ------------------ Hero Section ------------------ */
+.hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(180deg, #0f1b1b 20%, #152525 100%);
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #c8d6d2;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ------------------ About Section ------------------ */
+.about {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: var(--primary-green);
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #c8d6d2;
+  margin-bottom: 15px;
+}
+
+.about-img {
+  flex: 1;
+  text-align: center;
+}
+
+.about-img img {
+  width: 85%;
+  border-radius: 12px;
+  box-shadow: var(--hover-glow);
+  transition: 0.4s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------ Features Section ------------------ */
+.features {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.features h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  width: 260px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 157, 0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--hover-glow);
+}
+
+.feature-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #c8d6d2;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ------------------ Vision Section ------------------ */
+.vision {
+  text-align: center;
+  padding: 70px 30px;
+  background: #0c1616;
+}
+
+.vision h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.vision p {
+  max-width: 800px;
+  margin: 0 auto 15px;
+  color: #c8d6d2;
+  line-height: 1.7;
+}
+
+.vision .quote {
+  color: var(--accent);
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+  background: #081010;
+  color: #9fe3ca;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+footer img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+footer p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+/* ------------------ Metrics Section ------------------ */
+.metrics {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.metrics h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.metric-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--hover-glow);
+}
+
+.metric-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.metric-card p {
+  color: #c8d6d2;
+  line-height: 1.6;
+}
+
+/* ------------------ Tableau / Visualizations ------------------ */
+.visualizations {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.visualizations h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.viz-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.viz-card p {
+  color: #c8d6d2;
+  margin-top: 10px;
+}
+
+/* ------------------ Contact Section ------------------ */
+.contact {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.contact-container h2 {
+  color: var(--primary-green);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #1f2a2a;
+  background: #142323;
+  color: #e6f2ef;
+  font-size: 1rem;
+  outline: none;
+  resize: vertical;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-green);
+  box-shadow: var(--hover-glow);
+}
+
+.btn-submit {
+  background: var(--primary-green);
+  color: var(--dark-bg);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: var(--accent);
+  color: var(--dark-bg);
+  box-shadow: var(--hover-glow);
+}
+
+/* ------------------ Chatbot ------------------ */
+#chatbox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none; /* hidden by default */
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+}
+
+#chatbox #chat-header {
+  background-color: var(--primary-green);
+  color: #ffffff;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chatbox #chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-msg,
+.bot-msg {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  background-color: var(--primary-green);
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+.bot-msg {
+  background-color: #e6f2ef;
+  color: #333333;
+  align-self: flex-start;
+}
+
+#chatbox #chat-input {
+  border: none;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* ------------------ Chatbot Container ------------------ */
+#chatbox {
+  position: fixed;
+  bottom: 105px; /* moved up to avoid overlap with button */
+  right: 25px;
+  width: 300px;
+  max-height: 400px;
+  background-color: #ffffff; /* white theme */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none; /* hidden initially */
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+}
+
+/* ------------------ Chat Toggle Button ------------------ */
+#chat-toggle {
+  position: fixed;
+  width: 120px; /* wider */
+  height: 50px; /* normal rectangle for text */
+  font-size: 1.5rem; /* smaller font for full word */
+  border-radius: 8px; /* rounded corners instead of circle */
+  bottom: 25px;
+  right: 25px;
+  border-color: var(--primary-green);
+  background-color: #022b14;
+  color: #ffffff;
+  border-width: 7px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  z-index: 1001;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#chat-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: var(--hover-glow);
+}
+
+/* ------------------ Scroll Animations ------------------ */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero fade-in */
+.hero-text.animate-on-scroll {
+  transform: translateY(40px);
+  transition-delay: 0.2s;
+}
+
+/* Image scale-up on scroll */
+.about-img img.animate-on-scroll {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.about-img img.animate-on-scroll.visible {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Typing animation for chatbot */
+.bot-msg.typing::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #333;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  30%,
+  60%,
+  90% {
+    opacity: 1;
+  }
+}
+
+/* ------------------ Workflow / How DINE-INTEL Works ------------------ */
+.workflow {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.workflow h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.workflow-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.workflow-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  width: 260px;
+  transition: 0.3s ease;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.workflow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--hover-glow);
+}
+
+.workflow-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.workflow-card p {
+  color: #c8d6d2;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.workflow-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-green);
+}
+
+.dash-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dash-links-grid a {
+  background: var(--primary-green);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.dash-links-grid a:hover {
+  background: var(--accent);
+}
+/* ------------------ Tableau / Visualizations ------------------ */
+.visualizations {
+  padding: 80px 40px;
+  text-align: center;
+  background: #0c1616;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.visualizations h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.visualizations p {
+  color: #c8d6d2;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* slightly larger min width */
+  gap: 25px;
+  justify-items: stretch; /* make all cards equal width */
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px; /* centers grid nicely */
+  margin: 0 auto;
+}
+
+.viz-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* keeps button at bottom */
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+  width: 100%; /* no change needed */
+}
+
+.viz-card p {
+  color: #c8d6d2;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.viz-card a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--primary-green);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.viz-card a:hover {
+  background: var(--accent);
+  box-shadow: var(--hover-glow);
+}
+
+/* ------------------ Dashboard Links Grid ------------------ */
+.dash-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.dash-links-grid a {
+  background: var(--primary-green);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.dash-links-grid a:hover {
+  background: var(--accent);
+  box-shadow: var(--hover-glow);
+}
+
+/* ------------------ Responsive Visualizations ------------------ */
+@media (max-width: 768px) {
+  .viz-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .viz-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+/* ------------------ Tableau / Visualizations ------------------ */
+.visualizations {
+  padding: 80px 40px;
+  text-align: center;
+  background: #0c1616;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.visualizations h2 {
+  color: var(--primary-green);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.visualizations p {
+  color: #c8d6d2;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.viz-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center all cards */
+  gap: 25px;
+  width: 100%;
+}
+
+.viz-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px; /* fixed width for uniformity */
+  box-shadow: var(--shadow);
+  transition: 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* space out content evenly */
+  min-height: 300px; /* ensures all cards are same height */
+}
+
+.viz-card p {
+  color: #c8d6d2;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.viz-card a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--primary-green);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-top: auto; /* pushes link to bottom */
+}
+
+.viz-card a:hover {
+  background: var(--accent);
+  box-shadow: var(--hover-glow);
+}
+
+/* Hero button / View Dashboards button */
+.btn-primary {
+  background: #4ab16d; /* primary green */
+  color: #0d1717; /* dark text for contrast */
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #18f7a2; /* brighter green on hover */
+  color: #0d1717;
+  box-shadow: var(--hover-glow);
+}
+/* ------------------ Hero Section ------------------ */
+.hero {
+  position: relative;
+  height: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../static/images/hero-bg.jpg") no-repeat center center/cover;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-logo {
+  margin-bottom: 10px;
+}
+
+.hero-logo a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.hero-logo a:hover {
+  transform: scale(1.05);
+}
+
+.hero-logo img {
+  width: 150px;
+  height: 150x;
+  object-fit: contain;
+  border-radius: 15px; /* optional rounded corners */
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.hero-logo img:hover {
+  transform: scale(1.05);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 22, 22, 0.7); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--primary-green);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--accent);
+  box-shadow: 0 4px 15px rgba(0, 255, 150, 0.4);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers logo and text horizontally */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-logo img {
+  margin-bottom: 10px; /* space between logo and text */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.logo a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #4ab16d; /* example color */
+  color: #022b14;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-green);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjust height as needed */
+  text-align: center;
+  padding: 50px 20px; /* Ensure space around content */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #4ab16d; /* Change button color */
+  color: #022b14;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-green); /* Hover effect */
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: #0b0c1e; /* dark background for aurora */
+}
+
+/* Aurora Effect */
+.aurora {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 255, 255, 0.3),
+      transparent 70%
+    ),
+    radial-gradient(circle at 25% 25%, rgba(255, 0, 255, 0.3), transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 255, 0, 0.3), transparent 50%);
+  filter: blur(150px);
+  animation: auroraMove 15s linear infinite;
+  z-index: 1;
+}
+
+/* Aurora Animation */
+@keyframes auroraMove {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  50% {
+    transform: rotate(180deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(0);
+  }
+}
+
+/* Hero Content Above Aurora */
+.hero-logo,
+.hero-text,
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Text Styling */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00ffff;
+  color: #0b0c1e;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #073a1d;
+  color: white;
+}
+/* Hero Logo Styling */
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* small spacing between logo and text */
+}
+
+.hero-logo img {
+  width: 200px; /* large logo size, adjust as needed */
+  height: auto;
+  max-width: 90%; /* responsive */
+  border-radius: 12px; /* optional: rounded corners for style */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* subtle shadow for depth */
+  transition: transform 0.3s ease;
+}
+
+.hero-logo img:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
+
+/* Adjust hero text spacing */
+.hero-text {
+  margin-top: 0; /* remove extra top margin */
+  line-height: 1.5; /* tighter, readable spacing */
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .viz-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .viz-card {
+    width: 90%;
+    min-height: auto;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .viz-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .viz-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* ------------------ Responsive ------------------ */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, max-content));
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #chatbox {
+    width: 90%;
+    right: 5%;
+    bottom: 10px;
+    max-height: 50vh;
+  }
+
+  #chat-input {
+    font-size: 0.9rem;
+  }
+}

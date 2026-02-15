@@ -1,0 +1,78 @@
+Restaurant_Name,Phase,Total_Orders,Total_Revenue,Rank
+Andhra Gunpowder,Crisis,29,24401.33,14.0
+Andhra Gunpowder,Pre-crisis,36,25998.23,14.0
+Andhra Gunpowder,Recovery,31,27498.989999999998,9.0
+Aromas Of Biryani,Crisis,159,113200.58,1.0
+Aromas Of Biryani,Pre-crisis,167,120725.74,1.0
+Aromas Of Biryani,Recovery,178,124395.7,1.0
+Behrouz Biryani,Crisis,35,30069.25,9.0
+Behrouz Biryani,Pre-crisis,36,30522.55,10.0
+Behrouz Biryani,Recovery,30,20205.25,15.0
+Beijing Bites,Crisis,91,66669.14,3.0
+Beijing Bites,Pre-crisis,96,74609.68000000001,3.0
+Beijing Bites,Recovery,91,60313.46,3.0
+Bucket Biryani,Crisis,13,9547.95,23.0
+Bucket Biryani,Pre-crisis,27,18458.7,18.0
+Bucket Biryani,Recovery,24,16855.81,18.0
+Chickpet Donne Biryani House,Crisis,23,14504.75,21.0
+Chickpet Donne Biryani House,Pre-crisis,30,22278.3,16.0
+Chickpet Donne Biryani House,Recovery,33,24837.45,10.0
+Donne Biryani House,Crisis,8,6179.0,24.0
+Donne Biryani House,Pre-crisis,6,5336.3,25.0
+Donne Biryani House,Recovery,6,5398.5,25.0
+EasyBites by Empire,Crisis,43,27056.69,11.0
+EasyBites by Empire,Pre-crisis,44,33537.15,8.0
+EasyBites by Empire,Recovery,36,23577.76,12.0
+Five Star Chicken,Crisis,8,4558.0,25.0
+Five Star Chicken,Pre-crisis,12,9278.9,21.0
+Five Star Chicken,Recovery,11,7499.8,24.0
+FreshMenu,Crisis,109,81123.31,2.0
+FreshMenu,Pre-crisis,120,85858.64,2.0
+FreshMenu,Recovery,134,102250.02,2.0
+Goila Butter Chicken,Crisis,27,16521.88,18.0
+Goila Butter Chicken,Pre-crisis,34,18877.8,17.0
+Goila Butter Chicken,Recovery,24,17316.5,17.0
+Goli Vada Pav No. 1,Crisis,17,17788.75,16.0
+Goli Vada Pav No. 1,Pre-crisis,16,14668.45,20.0
+Goli Vada Pav No. 1,Recovery,14,10518.15,23.0
+Hari Super Sandwich,Crisis,26,17658.1,17.0
+Hari Super Sandwich,Pre-crisis,9,8563.2,23.0
+Hari Super Sandwich,Recovery,16,16838.82,19.0
+Hotel N.G.T Non Veg,Crisis,34,26869.25,12.0
+Hotel N.G.T Non Veg,Pre-crisis,29,22287.32,15.0
+Hotel N.G.T Non Veg,Recovery,33,23750.4,11.0
+Karnataka Biryani Point,Crisis,6,4372.25,26.0
+Karnataka Biryani Point,Recovery,3,3851.95,26.0
+Kataria's,Crisis,67,44087.840000000004,5.0
+Kataria's,Pre-crisis,54,34625.8,6.0
+Kataria's,Recovery,57,35368.71,6.0
+Lassi Shop,Crisis,47,35609.18,6.0
+Lassi Shop,Pre-crisis,41,28483.52,11.0
+Lassi Shop,Recovery,52,36737.39,5.0
+Living Bowls,Crisis,22,15599.9,19.0
+Living Bowls,Pre-crisis,31,26406.7,13.0
+Living Bowls,Recovery,20,15470.95,21.0
+MOJO Pizza - 2X Toppings,Crisis,44,30604.05,8.0
+MOJO Pizza - 2X Toppings,Pre-crisis,67,45912.23,4.0
+MOJO Pizza - 2X Toppings,Recovery,39,28230.75,8.0
+Meghana Foods,Crisis,60,45256.85,4.0
+Meghana Foods,Pre-crisis,46,33590.05,7.0
+Meghana Foods,Recovery,38,22682.45,14.0
+Meghduth Biryanis,Crisis,22,15367.86,20.0
+Meghduth Biryanis,Pre-crisis,11,7991.4,24.0
+Meghduth Biryanis,Recovery,18,14366.75,22.0
+Pizza@99,Crisis,27,19146.0,15.0
+Pizza@99,Pre-crisis,22,16008.4,19.0
+Pizza@99,Recovery,27,22994.42,13.0
+Puliyogare Point,Crisis,18,12049.75,22.0
+Puliyogare Point,Pre-crisis,13,9260.4,22.0
+Puliyogare Point,Recovery,27,18150.3,16.0
+RNR Biryani - Taste Of 1953,Crisis,38,26677.85,13.0
+RNR Biryani - Taste Of 1953,Pre-crisis,44,26502.65,12.0
+RNR Biryani - Taste Of 1953,Recovery,45,28775.87,7.0
+Rolls On Wheels,Crisis,33,27273.88,10.0
+Rolls On Wheels,Pre-crisis,37,30905.4,9.0
+Rolls On Wheels,Recovery,23,15568.15,20.0
+Shanmukha,Crisis,50,33731.64,7.0
+Shanmukha,Pre-crisis,53,39006.99,5.0
+Shanmukha,Recovery,62,42751.32,4.0
