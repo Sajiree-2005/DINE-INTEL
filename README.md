@@ -111,15 +111,18 @@ The platform converts raw operational data into meaningful recovery strategies.
 ```bash
 git clone https://github.com/your-username/dine-intel.git
 ```
-```bash
+
 2️⃣ Navigate into the Folder
+```bash
 cd dine-intel
 ```
-```bash
+
 3️⃣ Install Dependencies
+```bash
 pip install flask
 ```
-```bash
+
 4️⃣ Run the Application
+```bash
 python app.py
 ```
